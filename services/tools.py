@@ -31,30 +31,31 @@ RECORD_TASKS_TOOL = types.FunctionDeclaration(
         "transcript, along with a brief neutral summary of the meeting."
     ),
     parameters={
-        "type": "object",
+        "type": "OBJECT",
         "properties": {
             "summary": {
-                "type": "string",
+                "type": "STRING",
                 "description": "One or two sentence neutral summary of the meeting.",
             },
             "tasks": {
-                "type": "array",
+                "type": "ARRAY",
                 "items": {
-                    "type": "object",
+                    "type": "OBJECT",
                     "properties": {
-                        "id": {"type": "string"},
-                        "description": {"type": "string"},
-                        "owner": {"type": "string"},
+                        "id": {"type": "STRING"},
+                        "description": {"type": "STRING"},
+                        "owner": {"type": "STRING"},
                         "deadline": {
-                            "type": ["string", "null"],
+                            "type": "STRING",
+                            "nullable": True,
                             "description": "ISO date YYYY-MM-DD, or null.",
                         },
                         "priority": {
-                            "type": "string",
+                            "type": "STRING",
                             "enum": ["High", "Medium", "Low"],
                         },
-                        "confidence": {"type": "number"},
-                        "source_excerpt": {"type": "string"},
+                        "confidence": {"type": "NUMBER"},
+                        "source_excerpt": {"type": "STRING"},
                     },
                     "required": ["id", "description", "owner", "priority"],
                 },
@@ -78,21 +79,21 @@ RECOMMEND_ASSIGNMENTS_TOOL = types.FunctionDeclaration(
         "name a real, known team member — never invent a name."
     ),
     parameters={
-        "type": "object",
+        "type": "OBJECT",
         "properties": {
             "recommendations": {
-                "type": "array",
+                "type": "ARRAY",
                 "items": {
-                    "type": "object",
+                    "type": "OBJECT",
                     "properties": {
-                        "task_id": {"type": "string"},
-                        "recommended_owner": {"type": "string"},
+                        "task_id": {"type": "STRING"},
+                        "recommended_owner": {"type": "STRING"},
                         "rationale": {
-                            "type": "string",
+                            "type": "STRING",
                             "description": "Brief, specific reason: workload, task-description skill cues, deadline pressure.",
                         },
-                        "confidence": {"type": "number"},
-                        "alternative_candidate": {"type": ["string", "null"]},
+                        "confidence": {"type": "NUMBER"},
+                        "alternative_candidate": {"type": "STRING", "nullable": True},
                     },
                     "required": ["task_id", "recommended_owner", "rationale", "confidence"],
                 },
