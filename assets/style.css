@@ -1,0 +1,42 @@
+/* Synapse — minimal, professional dashboard identity.
+   Deliberately restrained: no gradients, no glassmorphism, no
+   animation-for-its-own-sake. Monospace accents on the header and
+   agent trace reinforce the "AI operations console" feel without
+   looking decorative. */
+
+.synapse-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.25);
+}
+
+.synapse-title {
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.02em;
+}
+
+.synapse-tagline {
+    color: rgba(150, 150, 150, 0.9);
+    font-size: 0.9rem;
+}
+
+.synapse-status-pill {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.6rem;
+    border-radius: 3px;
+    border: 1px solid rgba(91, 141, 239, 0.5);
+    color: #5B8DEF;
+}
+
+div[data-testid="stMetric"] {
+    background: rgba(150, 150, 150, 0.06);
+    border: 1px solid rgba(150, 150, 150, 0.15);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+}

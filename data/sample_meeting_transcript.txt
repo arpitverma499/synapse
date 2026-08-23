@@ -1,0 +1,29 @@
+Weekly Product Sync — August 22, 2026
+
+Priya: Okay let's get started. First up, the Q3 report — finance is
+asking for it by end of week.
+
+Sam: I can take that. I'll have the Q3 report to finance by Friday.
+
+Priya: Great. Next, we still need to book the venue for the offsite.
+Nobody's picked that up yet.
+
+Marcus: I don't have bandwidth this week, but it's not urgent — the
+offsite isn't until October.
+
+Priya: Fair. Someone will need to book the venue eventually, let's
+leave it unassigned for now. Also, the API rate-limiting bug — that's
+been open for two weeks and customers are complaining.
+
+Sam: That one's high priority. I think Marcus was looking into it?
+
+Marcus: Yeah, I'll fix the API rate-limiting bug by Wednesday, it's
+been escalated twice now.
+
+Priya: Perfect. Last thing — we should update the onboarding docs,
+they're out of date since the last release, but it's low priority,
+whenever someone has time.
+
+Sam: I can take a pass at the onboarding docs, no rush though.
+
+Priya: Sounds good. That's everything for today.
