@@ -11,7 +11,7 @@
 
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue)]()
 [![Streamlit](https://img.shields.io/badge/streamlit-1.38%2B-FF4B4B)]()
-[![Gemini](https://img.shields.io/badge/AI-Gemini%202.0%20Flash-8E44AD)]()
+[![Gemini](https://img.shields.io/badge/AI-Gemini%203.6%20Flash-8E44AD)]()
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 
 ---
