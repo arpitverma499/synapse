@@ -15,6 +15,14 @@
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 
 ---
+# Synapse
+
+> Turn meeting chaos into accountable action.
+
+🚀 **Live Demo:** https://synapse-capstone.streamlit.app/
+
+## Overview
+...
 
 ## Overview
 
